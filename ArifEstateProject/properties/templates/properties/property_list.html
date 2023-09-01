@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Property List</h1>
+        <ul class="list-group mt-4">
+            {% for property in properties %}
+                <li class="list-group-item">{{ property.title }} - Price: ${{ property.price }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
+
